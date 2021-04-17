@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+</head>
+<body>
+    <div class="wrap">
+    <div class="main">
+        <label for="QuestionsQuantity"><h1>Number of Questions: </h1></label>
+        <input type="number" id="QuestionsQuantity" placeholder="enter quantity" class="questions-quantity" min = "10" max = "50">
+        <label for="Category"><h1>Choose Category</h1></label>
+        <select class="selects" id="Category">
+            <option>any</option>
+        </select>
+        <label for="SelectDifficulty"><h1>Choose Difficulty</h1></label>
+        <select class="selects" id="SelectDifficulty">
+            <option id="any">any</option>
+            <option id="easy">easy</option>
+            <option id= "medium">medium</option>
+            <option id= "hard">hard</option>
+        </select>
+        <button class="start-button" onclick="getQuestions()">start</button>
+    </div>
+</div>
+<user-card class="game"></user-card>
+</body>
+<script src="javascript/index.js"></script>
+<script src="javascript/game.js"></script>
+</html>
